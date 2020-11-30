@@ -1,13 +1,140 @@
-/* line 2, ../sass/main.scss */
+/* line 8, ../sass/main.scss */
 body {
-  font-family: pimpernel;
   background-color: #F6EEE3;
+  font-size: 18px;
+  font-family: pimpernel;
+  color: #6C6C6C;
 }
-/* line 7, ../sass/main.scss */
-body main h1#under-construction {
+/* line 15, ../sass/main.scss */
+body h1 {
   font-family: thefridaystroke;
   font-size: 60px;
+}
+/* line 19, ../sass/main.scss */
+body h2.dots {
+  font-size: 24px;
+  font-family: leddotmatrix;
+  font-weight: 200;
+}
+/* line 25, ../sass/main.scss */
+body h2.stomp {
+  font-size: 30px;
+  font-family: stompkind;
+  font-weight: 200;
+}
+/* line 30, ../sass/main.scss */
+body p {
+  font-family: pimpernel;
+}
+/* line 32, ../sass/main.scss */
+body p.no-top-margin {
+  margin-top: 0;
+}
+/* line 38, ../sass/main.scss */
+body div#content-wrapper {
+  position: relative;
+  width: 375px;
+  border: 1px solid #F6EEE3;
+  margin: 0 auto;
+}
+/* line 44, ../sass/main.scss */
+body div#content-wrapper #home-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-family: leddotmatrix;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+/* line 55, ../sass/main.scss */
+body div#content-wrapper::after {
+  content: "";
+  background-image: url("../static/img/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: 365px auto;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+/* line 69, ../sass/main.scss */
+body div#content-wrapper header {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 160px;
+}
+/* line 73, ../sass/main.scss */
+body div#content-wrapper header img {
+  margin: 0 auto;
+  width: 300px;
+}
+/* line 78, ../sass/main.scss */
+body div#content-wrapper header.main-title img {
+  margin-left: 10px;
+  width: 300px;
+}
+/* line 82, ../sass/main.scss */
+body div#content-wrapper header.main-title h2 {
+  margin: 0;
+  align-self: flex-end;
+  margin-top: -20px;
+  margin-right: 40px;
+}
+/* line 91, ../sass/main.scss */
+body div#content-wrapper main {
+  padding: 0.5em 1.5em;
+}
+/* line 94, ../sass/main.scss */
+body div#content-wrapper main section.buttons {
+  margin-top: 2em;
+}
+/* line 96, ../sass/main.scss */
+body div#content-wrapper main section.buttons a {
+  display: block;
+  background-color: rgba(238, 196, 188, 0.6);
+  padding: 0.5em;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 20px auto;
+  text-decoration: none;
   color: #6C6C6C;
-  opacity: 60%;
-  padding: 1em;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: stompkind;
+  font-weight: 200;
+}
+/* line 112, ../sass/main.scss */
+body div#content-wrapper main section.buttons a:hover {
+  background-color: #eec4bc;
+}
+/* line 118, ../sass/main.scss */
+body div#content-wrapper main form h2 {
+  margin-bottom: 10px;
+}
+/* line 121, ../sass/main.scss */
+body div#content-wrapper main form input[type=text] {
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+}
+/* line 126, ../sass/main.scss */
+body div#content-wrapper main form #radio-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+/* line 132, ../sass/main.scss */
+body div#content-wrapper main form #radio-wrapper label {
+  margin: 0 10px 0 -18px;
+}
+/* line 134, ../sass/main.scss */
+body div#content-wrapper main form section.buttons {
+  margin-top: 0;
 }

@@ -52,24 +52,38 @@
   </head>
   <body>
     <div id="content-wrapper">
-      <header class="main-title">
-        <img src="./static/img/monisfest21.png" alt="MonisFest21">
-        <h2 class="stomp">Dani & Andrea</h2>
+      <a href="index.html" id="home-button">&lt</a>
+      <header>
+        <img src="./static/img/enquesta.png" alt="Enquesta">
       </header>
       <main>
-        <p>Estem molt contents de poder invitar-os a la nostra boda!! Prepareu-vos per viure un festival: ballar, riure i diversió a full!! Aquí trobareu una enquesta que heu de respondre i info extra. </p>
-        <section>
-          <h2 class="dots">QUAN?</h2>
-          <p>3 de septembre, 17:00 - Sunrise</p>
-        </section>
-        <section>
-          <h2 class="dots">ON?</h2>
-          <p>Mas Quintana i Cal Pubill</p>
-        </section>
-        <section class="buttons">
-          <a href="form.html">Respon la enquesta!</a>
-          <a href="info.html">Més info i novetats</a>
-        </section>
+        <p class="no-top-margin">Necessitem que omplis el següent formulari:</p>
+        <form action="https://formspree.io/f/xleoworq" method="POST">
+          <section>
+            <input type="text" name="nom" placeholder="Escriu el teu nom i cognoms (very important!)" required>
+            <h2 class="dots">VINDRAS AL FESTI?</h2>
+            <div id="radio-wrapper">
+              <input id="si" type="radio" name="asistencia" class="result-option" value="si" required> <label for="si">Pos claro!</label>
+              <input id="no"  type="radio" name="asistencia" class="result-option" value="no" required> <label for="no">No puedorrr</label>
+              <input id="nsnc" type="radio" name="asistencia" class="result-option" value="nsnc" required> <label for="nsnc">No se sabe</label>  
+            </div>
+          </section>
+          <section>
+            <h2 class="dots">SI T'APUNTES...</h2>
+          </section>
+          <section>
+            <h2 class="dots">ETS INTOLERANT A ALGUN ALIMENT?</h2>
+            <input type="text" name="aliments" placeholder="Si la resposta es si, escriu-lo aquí...">
+          </section>
+          <section>
+            <h2 class="dots">QUIN TEMAZO T'AGRADARIA ESCOLTAR??</h2>
+            <input type="text" name="song" placeholder="Escriu aquí el títol i el artista ;)">
+          </section>
+          <section class="buttons">
+            <a href="">Envia</a>
+          </section>
+  
+        </form>
       </main>
   
       <footer>

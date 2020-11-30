@@ -1,16 +1,137 @@
+// colors
+$background: #F6EEE3;
+$secondary: rgb(238, 196, 188);
+$text-color: #6C6C6C;
+
+
 
 body {
+    background-color: $background;
+    font-size: 18px;
     font-family: pimpernel;
-    background-color: #F6EEE3;
+    color: $text-color;
+    
+    // basic elements
+    h1 {
+        font-family: thefridaystroke;
+        font-size: 60px;
+    }
+    h2.dots {
+        font-size: 24px;
+        font-family: leddotmatrix;
+        font-weight: 200;
 
-    main {
-        h1#under-construction {
-            font-family: thefridaystroke;
-            font-size: 60px;
-            color: #6C6C6C;
-            opacity: 60%;
-            padding: 1em;
+    }
+    h2.stomp {
+        font-size: 30px;
+        font-family: stompkind;
+        font-weight: 200;
+    }
+    p {
+        font-family: pimpernel;
+        &.no-top-margin {
+            margin-top: 0;
         }
     }
 
+    // styling
+    div#content-wrapper {
+        position: relative;
+        width: 375px;
+        border: 1px solid $background;
+        margin: 0 auto;
+
+        #home-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            font-family: leddotmatrix;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 30px;
+        }
+        
+        &::after {
+            content: "";
+            background-image: url('../static/img/background.jpeg');
+            background-repeat: no-repeat;
+            background-size: 365px auto;            
+            opacity: 0.5;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+          }
+
+        header {
+            display: flex;
+            flex-flow: column nowrap;
+            margin-top: 160px;
+            img {
+                margin: 0 auto;
+                width: 300px;
+            }
+            &.main-title {
+                img {
+                    margin-left: 10px;
+                    width: 300px;
+                }
+                h2 {
+                    margin: 0;
+                    align-self: flex-end;
+                    margin-top: -20px;
+                    margin-right: 40px;
+                }
+            }
+        }
+
+        main {
+            padding: 0.5em 1.5em;
+
+            section.buttons {
+                margin-top: 2em;
+                a {
+                    display: block;
+                    background-color: rgba(238, 196, 188, .6);
+                    padding: 0.5em;
+                    border-radius: 10px;
+                    width: 50%;
+                    text-align: center;
+                    margin: 20px auto;
+                    text-decoration: none;
+                    color: $text-color;
+                    cursor: pointer;
+
+                    font-size: 18px;
+                    font-family: stompkind;
+                    font-weight: 200;
+                    
+                    &:hover {
+                        background-color: rgba(238, 196, 188, 1);
+                    }
+                }
+            }
+            form {
+                h2 {
+                    margin-bottom: 10px;
+                }
+                input[type=text] {
+                    margin-top: 0;
+                    padding: 0;
+                    width: 100%;
+                }
+                #radio-wrapper {
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: baseline;
+                    justify-content: space-evenly;
+
+                    label { margin: 0 10px 0 -18px;}
+                }
+                section.buttons {margin-top: 0;}            }
+        }
+    }
   }
