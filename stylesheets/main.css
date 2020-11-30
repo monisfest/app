@@ -94,7 +94,7 @@ body div#content-wrapper main section.buttons {
   margin-top: 2em;
 }
 /* line 96, ../sass/main.scss */
-body div#content-wrapper main section.buttons button {
+body div#content-wrapper main section.buttons a, body div#content-wrapper main section.buttons button {
   display: block;
   background-color: rgba(238, 196, 188, 0.6);
   padding: 0.5em;
@@ -111,7 +111,7 @@ body div#content-wrapper main section.buttons button {
   border: none;
 }
 /* line 113, ../sass/main.scss */
-body div#content-wrapper main section.buttons button:hover {
+body div#content-wrapper main section.buttons a:hover, body div#content-wrapper main section.buttons button:hover {
   background-color: #eec4bc;
 }
 /* line 119, ../sass/main.scss */
