@@ -20,7 +20,6 @@ body {
         font-size: 24px;
         font-family: leddotmatrix;
         font-weight: 200;
-
     }
     h2.stomp {
         font-size: 30px;
@@ -32,6 +31,17 @@ body {
         &.no-top-margin {
             margin-top: 0;
         }
+    }
+    .centered {
+        text-align: center;
+    }
+    .note {
+        font-style: italic;
+    }
+    .mono {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 80%;
+        text-align: center;
     }
 
     // styling
@@ -54,7 +64,7 @@ body {
         
         &::after {
             content: "";
-            background-image: url('../static/img/background.jpeg');
+            background-image: url('../static/img/background_long.png');
             background-repeat: no-repeat;
             background-size: 365px auto;            
             opacity: 0.5;
@@ -130,9 +140,26 @@ body {
                     align-items: baseline;
                     justify-content: space-evenly;
 
-                    label { margin: 0 10px 0 -18px;}
+                    label { margin: 0 10px 0 -4px;}
                 }
-                section.buttons {margin-top: 0;}            }
+                section.buttons {margin-top: 0;}            
+            }
+
+            section.contact {
+                padding: 1em 0;
+                text-align: center;
+                div {
+                    img {
+                        height: 14px;
+                        margin-right: 4px;
+                        color: red;;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: $text-color;
+                    }
+                }
+            }
         }
     }
   }

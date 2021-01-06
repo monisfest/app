@@ -16,28 +16,42 @@ body h2.dots {
   font-family: leddotmatrix;
   font-weight: 200;
 }
-/* line 25, ../sass/main.scss */
+/* line 24, ../sass/main.scss */
 body h2.stomp {
   font-size: 30px;
   font-family: stompkind;
   font-weight: 200;
 }
-/* line 30, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 body p {
   font-family: pimpernel;
 }
-/* line 32, ../sass/main.scss */
+/* line 31, ../sass/main.scss */
 body p.no-top-margin {
   margin-top: 0;
 }
+/* line 35, ../sass/main.scss */
+body .centered {
+  text-align: center;
+}
 /* line 38, ../sass/main.scss */
+body .note {
+  font-style: italic;
+}
+/* line 41, ../sass/main.scss */
+body .mono {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 80%;
+  text-align: center;
+}
+/* line 48, ../sass/main.scss */
 body div#content-wrapper {
   position: relative;
   width: 375px;
   border: 1px solid #F6EEE3;
   margin: 0 auto;
 }
-/* line 44, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 body div#content-wrapper #home-button {
   position: absolute;
   top: 20px;
@@ -48,10 +62,10 @@ body div#content-wrapper #home-button {
   cursor: pointer;
   font-size: 30px;
 }
-/* line 55, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 body div#content-wrapper::after {
   content: "";
-  background-image: url("../static/img/background.jpeg");
+  background-image: url("../static/img/background_long.png");
   background-repeat: no-repeat;
   background-size: 365px auto;
   opacity: 0.5;
@@ -62,38 +76,38 @@ body div#content-wrapper::after {
   position: absolute;
   z-index: -1;
 }
-/* line 69, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 body div#content-wrapper header {
   display: flex;
   flex-flow: column nowrap;
   margin-top: 160px;
 }
-/* line 73, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 body div#content-wrapper header img {
   margin: 0 auto;
   width: 300px;
 }
-/* line 78, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 body div#content-wrapper header.main-title img {
   margin-left: 10px;
   width: 300px;
 }
-/* line 82, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 body div#content-wrapper header.main-title h2 {
   margin: 0;
   align-self: flex-end;
   margin-top: -20px;
   margin-right: 40px;
 }
-/* line 91, ../sass/main.scss */
+/* line 101, ../sass/main.scss */
 body div#content-wrapper main {
   padding: 0.5em 1.5em;
 }
-/* line 94, ../sass/main.scss */
+/* line 104, ../sass/main.scss */
 body div#content-wrapper main section.buttons {
   margin-top: 2em;
 }
-/* line 96, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 body div#content-wrapper main section.buttons a, body div#content-wrapper main section.buttons button {
   display: block;
   background-color: rgba(238, 196, 188, 0.6);
@@ -110,32 +124,48 @@ body div#content-wrapper main section.buttons a, body div#content-wrapper main s
   font-weight: 200;
   border: none;
 }
-/* line 113, ../sass/main.scss */
+/* line 123, ../sass/main.scss */
 body div#content-wrapper main section.buttons a:hover, body div#content-wrapper main section.buttons button:hover {
   background-color: #eec4bc;
 }
-/* line 119, ../sass/main.scss */
+/* line 129, ../sass/main.scss */
 body div#content-wrapper main form h2 {
   margin-bottom: 10px;
 }
-/* line 122, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 body div#content-wrapper main form input[type=text] {
   margin-top: 0;
   padding: 0;
   width: 100%;
 }
-/* line 127, ../sass/main.scss */
+/* line 137, ../sass/main.scss */
 body div#content-wrapper main form #radio-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
   justify-content: space-evenly;
 }
-/* line 133, ../sass/main.scss */
+/* line 143, ../sass/main.scss */
 body div#content-wrapper main form #radio-wrapper label {
-  margin: 0 10px 0 -18px;
+  margin: 0 10px 0 -4px;
 }
-/* line 135, ../sass/main.scss */
+/* line 145, ../sass/main.scss */
 body div#content-wrapper main form section.buttons {
   margin-top: 0;
+}
+/* line 148, ../sass/main.scss */
+body div#content-wrapper main section.contact {
+  padding: 1em 0;
+  text-align: center;
+}
+/* line 152, ../sass/main.scss */
+body div#content-wrapper main section.contact div img {
+  height: 14px;
+  margin-right: 4px;
+  color: red;
+}
+/* line 157, ../sass/main.scss */
+body div#content-wrapper main section.contact div a {
+  text-decoration: none;
+  color: #6C6C6C;
 }
