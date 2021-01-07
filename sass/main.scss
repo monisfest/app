@@ -7,7 +7,7 @@ $text-color: #6C6C6C;
 
 body {
     background-color: $background;
-    font-size: 20px;
+    font-size: 24px;
     font-family: pimpernel;
     color: $text-color;
     
@@ -17,7 +17,7 @@ body {
         font-size: 60px;
     }
     h2.dots {
-        font-size: 24px;
+        font-size: 26px;
         font-family: leddotmatrix;
         font-weight: 200;
     }
@@ -40,8 +40,9 @@ body {
     }
     .mono {
         font-family: 'Courier New', Courier, monospace;
-        font-size: 80%;
+        font-size: 70%;
         text-align: center;
+        margin-top: -18px;
     }
 
     // styling
@@ -146,8 +147,10 @@ body {
             }
 
             section.contact {
-                padding: 1em 0;
                 text-align: center;
+                p {
+                    margin-bottom: 10px;
+                } 
                 div {
                     img {
                         height: 14px;

@@ -1,7 +1,7 @@
 /* line 8, ../sass/main.scss */
 body {
   background-color: #F6EEE3;
-  font-size: 20px;
+  font-size: 24px;
   font-family: pimpernel;
   color: #6C6C6C;
 }
@@ -12,7 +12,7 @@ body h1 {
 }
 /* line 19, ../sass/main.scss */
 body h2.dots {
-  font-size: 24px;
+  font-size: 26px;
   font-family: leddotmatrix;
   font-weight: 200;
 }
@@ -41,17 +41,18 @@ body .note {
 /* line 41, ../sass/main.scss */
 body .mono {
   font-family: 'Courier New', Courier, monospace;
-  font-size: 80%;
+  font-size: 70%;
   text-align: center;
+  margin-top: -18px;
 }
-/* line 48, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 body div#content-wrapper {
   position: relative;
   width: 375px;
   border: 1px solid #F6EEE3;
   margin: 0 auto;
 }
-/* line 54, ../sass/main.scss */
+/* line 55, ../sass/main.scss */
 body div#content-wrapper #home-button {
   position: absolute;
   top: 20px;
@@ -62,7 +63,7 @@ body div#content-wrapper #home-button {
   cursor: pointer;
   font-size: 30px;
 }
-/* line 65, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 body div#content-wrapper::after {
   content: "";
   background-image: url("../static/img/background_long.png");
@@ -76,38 +77,38 @@ body div#content-wrapper::after {
   position: absolute;
   z-index: -1;
 }
-/* line 79, ../sass/main.scss */
+/* line 80, ../sass/main.scss */
 body div#content-wrapper header {
   display: flex;
   flex-flow: column nowrap;
   margin-top: 160px;
 }
-/* line 83, ../sass/main.scss */
+/* line 84, ../sass/main.scss */
 body div#content-wrapper header img {
   margin: 0 auto;
   width: 300px;
 }
-/* line 88, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 body div#content-wrapper header.main-title img {
   margin-left: 10px;
   width: 300px;
 }
-/* line 92, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 body div#content-wrapper header.main-title h2 {
   margin: 0;
   align-self: flex-end;
   margin-top: -20px;
   margin-right: 40px;
 }
-/* line 101, ../sass/main.scss */
+/* line 102, ../sass/main.scss */
 body div#content-wrapper main {
   padding: 0.5em 1.5em;
 }
-/* line 104, ../sass/main.scss */
+/* line 105, ../sass/main.scss */
 body div#content-wrapper main section.buttons {
   margin-top: 2em;
 }
-/* line 106, ../sass/main.scss */
+/* line 107, ../sass/main.scss */
 body div#content-wrapper main section.buttons a, body div#content-wrapper main section.buttons button {
   display: block;
   background-color: rgba(238, 196, 188, 0.6);
@@ -124,47 +125,50 @@ body div#content-wrapper main section.buttons a, body div#content-wrapper main s
   font-weight: 200;
   border: none;
 }
-/* line 123, ../sass/main.scss */
+/* line 124, ../sass/main.scss */
 body div#content-wrapper main section.buttons a:hover, body div#content-wrapper main section.buttons button:hover {
   background-color: #eec4bc;
 }
-/* line 129, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 body div#content-wrapper main form h2 {
   margin-bottom: 10px;
 }
-/* line 132, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 body div#content-wrapper main form input[type=text] {
   margin-top: 0;
   padding: 0;
   width: 100%;
 }
-/* line 137, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 body div#content-wrapper main form #radio-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
   justify-content: space-evenly;
 }
-/* line 143, ../sass/main.scss */
+/* line 144, ../sass/main.scss */
 body div#content-wrapper main form #radio-wrapper label {
   margin: 0 10px 0 -4px;
 }
-/* line 145, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 body div#content-wrapper main form section.buttons {
   margin-top: 0;
 }
-/* line 148, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 body div#content-wrapper main section.contact {
-  padding: 1em 0;
   text-align: center;
 }
-/* line 152, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
+body div#content-wrapper main section.contact p {
+  margin-bottom: 10px;
+}
+/* line 155, ../sass/main.scss */
 body div#content-wrapper main section.contact div img {
   height: 14px;
   margin-right: 4px;
   color: red;
 }
-/* line 157, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 body div#content-wrapper main section.contact div a {
   text-decoration: none;
   color: #6C6C6C;
