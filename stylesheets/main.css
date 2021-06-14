@@ -108,7 +108,11 @@ body div#content-wrapper main {
 body div#content-wrapper main section.buttons {
   margin-top: 2em;
 }
-/* line 107, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
+body div#content-wrapper main section.buttons.no-top-margin {
+  margin-top: 0;
+}
+/* line 110, ../sass/main.scss */
 body div#content-wrapper main section.buttons a, body div#content-wrapper main section.buttons button {
   display: block;
   background-color: rgba(238, 196, 188, 0.6);
@@ -125,51 +129,59 @@ body div#content-wrapper main section.buttons a, body div#content-wrapper main s
   font-weight: 200;
   border: none;
 }
-/* line 124, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 body div#content-wrapper main section.buttons a:hover, body div#content-wrapper main section.buttons button:hover {
   background-color: #eec4bc;
 }
-/* line 130, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 body div#content-wrapper main form h2 {
   margin-bottom: 10px;
 }
-/* line 133, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 body div#content-wrapper main form input[type=text] {
   margin-top: 0;
   padding: 0;
   width: 100%;
 }
-/* line 138, ../sass/main.scss */
+/* line 141, ../sass/main.scss */
 body div#content-wrapper main form #radio-wrapper {
   display: flex;
   flex-flow: row nowrap;
   align-items: baseline;
   justify-content: space-evenly;
 }
-/* line 144, ../sass/main.scss */
+/* line 147, ../sass/main.scss */
 body div#content-wrapper main form #radio-wrapper label {
   margin: 0 10px 0 -4px;
 }
-/* line 146, ../sass/main.scss */
+/* line 149, ../sass/main.scss */
 body div#content-wrapper main form section.buttons {
   margin-top: 0;
 }
-/* line 149, ../sass/main.scss */
+/* line 152, ../sass/main.scss */
 body div#content-wrapper main section.contact {
   text-align: center;
 }
-/* line 151, ../sass/main.scss */
+/* line 154, ../sass/main.scss */
 body div#content-wrapper main section.contact p {
   margin-bottom: 10px;
 }
-/* line 155, ../sass/main.scss */
+/* line 158, ../sass/main.scss */
 body div#content-wrapper main section.contact div img {
   height: 14px;
   margin-right: 4px;
   color: red;
 }
-/* line 160, ../sass/main.scss */
+/* line 163, ../sass/main.scss */
 body div#content-wrapper main section.contact div a {
   text-decoration: none;
+  color: #6C6C6C;
+}
+/* line 170, ../sass/main.scss */
+body div#content-wrapper main ul {
+  margin: -20px auto;
+}
+/* line 173, ../sass/main.scss */
+body div#content-wrapper main ul li a {
   color: #6C6C6C;
 }

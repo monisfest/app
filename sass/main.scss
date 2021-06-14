@@ -103,6 +103,9 @@ body {
             padding: 0.5em 1.5em;
 
             section.buttons {
+                &.no-top-margin {
+                    margin-top: 0;
+                }
                 margin-top: 2em;
                 a, button {
                     display: block;
@@ -159,6 +162,15 @@ body {
                     }
                     a {
                         text-decoration: none;
+                        color: $text-color;
+                    }
+                }
+            }
+
+            ul {
+                margin: -20px auto;
+                li {
+                    a {
                         color: $text-color;
                     }
                 }
